@@ -15,7 +15,6 @@ $secondary-color: #cf371f;
 
 body {
   font-family: "Open Sans", sans-serif;
-  word-break: break-all;
 }
 
 img {
@@ -27,6 +26,7 @@ img {
   color: $primary-color;
   font-family: "Londrina Shadow", cursive;
   margin: 0;
+  text-align: center;
 }
 
 // search styles
@@ -117,6 +117,7 @@ img {
   &__fact {
     color: #333;
     display: flex;
+    word-break: break-all;
 
     &:hover {
       color: $primary-color;
@@ -131,7 +132,7 @@ img {
   }
 }
 
-.search-loading {
+.loading {
   width: 30px;
   height: 30px;
   border: 3px solid #ddd;

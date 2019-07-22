@@ -67,12 +67,15 @@ searchForm.addEventListener("submit", event => {
         page: 10
       });
 
-      list.on('updated', event => {
-        window.scrollTo(0, 0);
-      })
+      list.on("updated", event => {
+        window.scrollTo({
+          top: 500,
+          behavior: "smooth"
+        });
+      });
     })
     .catch(error => {
-      alert('Unexpected error')
+      alert("Unexpected error");
     })
     .finally(() => {
       searchLoading.style.display = "none";
