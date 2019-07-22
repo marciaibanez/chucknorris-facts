@@ -16,8 +16,8 @@ $ npm run build
 ```
 
 ## Used in this repository
-- Parcel
-- SASS
-- Normalize.css
-- Axios
-- List.js
+- [Parcel](https://parceljs.org/)
+- [SASS](https://sass-lang.com/)
+- [Normalize.css](https://www.npmjs.com/package/normalize.css)
+- [Axios](https://www.npmjs.com/package/axios)
+- [List.js](https://www.npmjs.com/package/list.js)
