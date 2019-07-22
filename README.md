@@ -1,6 +1,6 @@
 #  Chuck Norris Facts
 
-This repository is a Chuck Norris facts search page, using [Chucknorris.io API](https://api.chucknorris.io/).
+This [repository](https://chucknorris-facts.netlify.com) is a Chuck Norris facts search page, using [Chucknorris.io API](https://api.chucknorris.io/).
 
 ## Requirements
 - Node.js
