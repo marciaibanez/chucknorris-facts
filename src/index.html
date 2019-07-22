@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chuck Norris Facts</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Londrina+Shadow|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="search-wrapper">
+      <img src="./chucklogo.png" alt="Chuck Norris" />
+
+      <h1 class="title">Chuck Norris Facts</h1>
+
+      <form id="search-form" class="search-form">
+        <input
+          id="search-input"
+          class="search-input"
+          type="text"
+          placeholder="Chuck Norris has already..."
+          autofocus
+        />
+
+        <div class="search-buttons">
+          <button id="search-button" class="search-button" type="submit">
+            Search
+          </button>
+
+          <button
+            id="lucky-button"
+            class="search-button search-button--secondary"
+            type="button"
+          >
+            Lucky?
+          </button>
+        </div>
+      </form>
+
+      <div id="search-loading" class="search-loading"></div>
+
+      <div id="search-list">
+        <ul id="search-results" class="search-results list"></ul>
+
+        <ul class="pagination"></ul>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

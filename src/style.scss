@@ -1,0 +1,167 @@
+// variables
+$global-radius: 5px;
+$global-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+$white: #fff;
+$grey: #ddd;
+$primary-color: #f15a21;
+$secondary-color: #cf371f;
+
+// base styles
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  word-break: break-all;
+}
+
+img {
+  max-width: 100%;
+}
+
+.title {
+  font-size: 3rem;
+  color: $primary-color;
+  font-family: "Londrina Shadow", cursive;
+  margin: 0;
+}
+
+// search styles
+.search-wrapper {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.search-form {
+  width: 100%;
+  text-align: center;
+}
+
+.search-input {
+  margin: 1rem auto;
+  border: 1px solid #cecece;
+  padding: 0.6rem;
+  border-radius: $global-radius;
+  background-color: $white;
+  width: 100%;
+  max-width: 400px;
+
+  &:hover {
+    box-shadow: $global-shadow;
+  }
+}
+
+.search-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.search-button {
+  border: 0;
+  padding: 0.6rem 2rem;
+  border-radius: $global-radius;
+  background-color: $primary-color;
+  color: $white;
+  cursor: pointer;
+  margin: 0 0.3rem;
+  transition: 0.3s all;
+
+  &:hover {
+    background-color: lighten($primary-color, 10%);
+  }
+
+  &--secondary {
+    background-color: $secondary-color;
+
+    &:hover {
+      background-color: lighten($secondary-color, 10%);
+    }
+  }
+}
+
+.search-results {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.search-result {
+  padding: 1rem;
+  border: solid 1px #cecece;
+  border-radius: $global-radius;
+  margin: 1rem 0;
+  transition: 0.5s all;
+
+  &:hover {
+    box-shadow: $global-shadow;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  &__icon {
+    margin-right: 1rem;
+  }
+
+  &__fact {
+    color: #333;
+    display: flex;
+
+    &:hover {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.search-loading {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #ddd;
+  border-top: 3px solid $primary-color;
+  border-radius: 100%;
+  animation: rotate 1s linear infinite;
+  margin-top: 1rem;
+  display: none;
+}
+
+// pagination styles
+.pagination {
+  display: flex;
+  list-style-type: none;
+  color: #333;
+  padding: 1rem 0;
+  margin: 0;
+  justify-content: center;
+
+  li {
+    a {
+      text-decoration: none;
+      color: #333;
+      padding: 0.5rem;
+    }
+
+    &.active a {
+      background-color: $primary-color;
+      color: $white;
+      border-radius: $global-radius;
+    }
+  }
+}
