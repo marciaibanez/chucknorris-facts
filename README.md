@@ -11,14 +11,19 @@ Live demo: https://chucknorris-facts.netlify.com
 ```sh
 # clone repo
 $ git clone https://github.com/marciaibanez/chucknorris-facts.git
+
 # enter in repo directory
 $ cd chucknorris-facts
+
 # install dependencies
 $ npm install
+
 # start development server on http://localhost:1234
 $ npm run dev
+
 # build for production
 $ npm run build
+
 # serve dist folder on http://localhost:5000
 $ npm start
 ```
