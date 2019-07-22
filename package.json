@@ -4,7 +4,8 @@
   "description": "This repository is a Chuck Norris facts search page, using Chucknorris.io API (https://api.chucknorris.io/).",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "start": "npm run build && serve dist"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "list.js": "^1.5.0",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "serve": "^11.1.0"
   }
 }
