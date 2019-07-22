@@ -66,10 +66,13 @@ searchForm.addEventListener("submit", event => {
         pagination: true,
         page: 10
       });
+
+      list.on('updated', event => {
+        window.scrollTo(0, 0);
+      })
     })
     .catch(error => {
-      console.log(error);
-      //alert('Unexpected error')
+      alert('Unexpected error')
     })
     .finally(() => {
       searchLoading.style.display = "none";
